@@ -10,6 +10,12 @@
 #include <filesystem>
 
 int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        std::cout << "Not enough arguments given.\n";
+        std::cout << "Expected folder path :(\n";
+        return 1;
+    }
+
     std::string folder = argv[1]; // set folder to argument 1
 
     int dirstat = std::filesystem::is_empty(folder);
