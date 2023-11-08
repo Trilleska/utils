@@ -10,7 +10,7 @@
 #include "lib/trilutil.h" // no-arg handling
 
 int main(int argc, char *argv[]) { 
-  if (arg_check(argc, 3) == false) {
+  if (arg_check(argc, 2) == false) {
         std::cout << "[FATAL] no directory name supplied :3\n";
         return 1;
     }
