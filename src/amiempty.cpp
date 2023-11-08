@@ -24,4 +24,6 @@ int main(int argc, char *argv[]) {
     } else {
         std::cout << folder << " is *not* empty.\n";
     }
+
+    return 0;
 }
