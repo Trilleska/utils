@@ -24,3 +24,9 @@ TRILLESKA SOFTWARE SUITE
 
 * this is useful if the directory contains files,
   otherwise, an exception is returned.
+
+4. fc
+`fc` is used to copy files.
+
+4.1 EXAMPLE USAGE
+`fc file1.txt file2.txt # creates a copy of file1.txt`
