@@ -16,8 +16,23 @@ int main(int argc, char *argv[]) {
     }
     std::string dir_arg = argv[1];
     if (dir_arg == "-r") {
-        // remove directory if -r option supplied
-        std::filesystem::remove(argv[2]);
+        // remove empty directory if -r option supplied
+        try {
+            std::filesystem::remove(argv[2]);
+        } catch (std::filesystem::filesystem_error const& ex) {
+            std::cerr << "error removing directory '" << argv[2] << "'\n";
+            std::cerr << "what(): " << ex.what() << "\n";
+            return 1;
+        }
+        return 0;
+    } else if (dir_arg == "-f") {
+        try {
+            std::filesystem::remove_all(argv[2]);
+        } catch (std::filesystem::filesystem_error const& ex) {
+            std::cerr << "error removing directory '" << argv[2] << "'\n";
+            std::cerr << "what(): " << ex.what() << "\n";
+            return 1;
+        }
         return 0;
     }
 
