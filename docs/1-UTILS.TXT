@@ -1,0 +1,26 @@
+TRILLESKA SOFTWARE SUITE
+        DOCUMENTATION v1.0 - 11/08/2023
+
+1. amiempty
+`amiempty` returns whether a directory is empty or not.
+
+1.1 EXAMPLE USAGE
+`amiempty /tmp/ # not empty`
+`amiempty /tmp/blah # empty`
+
+2. hn
+`hn` sets the hostname by piping text into /etc/hostname.
+
+2.1 EXAMPLE USAGE
+`hn trilleska # sets hostname to 'trilleska'`
+
+3. cdir
+`cdir` can create and remove directories.
+
+3.1 EXAMPLE USAGE
+`cdir test1234 # creates directory 'test1234'`
+`cdir -r test1234 # removes directory`
+`cdir -f test1234 # force removes directory*`
+
+* this is useful if the directory contains files,
+  otherwise, an exception is returned.

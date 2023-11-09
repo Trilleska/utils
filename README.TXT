@@ -4,5 +4,4 @@ The Trilleska software suite is a poor imitation of GNU coreutils and should be 
 
 -- THE UTILS --
 
-amiempty [FOLDER_PATH]
-    Return whether [FOLDER_PATH] is empty or not.
+[documentation moved to /docs/]
