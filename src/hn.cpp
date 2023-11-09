@@ -3,6 +3,9 @@
     (c) 2023 by Maxi [MIT LICENSE]
     ---
     "This program lets you change your system hostname"
+
+    ***Usage directions can be found at
+    section 2 of the Trilleska docs.***
 */
 #include <fstream>
 #include <iostream>

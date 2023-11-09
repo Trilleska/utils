@@ -4,6 +4,9 @@
     ---
     "This program serves as an alternative to mkdir
     and creates/removes directories."
+
+    ***Usage directions can be found at
+    section 3 of the Trilleska docs.***
 */
 #include <iostream>
 #include <filesystem>

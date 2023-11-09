@@ -3,6 +3,9 @@
     (c) 2023 by Maxi [MIT LICENSE]
     ---
     "This program tells you if a given directory is empty or not"
+
+    ***Usage directions can be found at
+    section 1 of the Trilleska docs.***
 */
 
 
